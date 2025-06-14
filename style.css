@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    line-height: 1.6;
+    color: #333;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .container .logo img{
+    width: 150px;
+    height: 150px;
+    align-items: flex-start;
+    justify-content: center;
+
+  }
+  header {
+    background-color: white;
+    color: rgb(5, 20, 223);
+    padding: 1rem 0;
+  }
+
+  header h1 {
+    text-align: center;
+    object-position: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .nav ul li a:hover{
+    background-color: white;
+    transform: scale(1.05);
+  }
+
+  .hero {
+    background: linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)), url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .section {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+  }
+
+  .section:nth-child(even) {
+    background-color: #e0ecff;
+  }
+  .motto{
+    color: rgb(111, 111, 238);
+    font-style: italic;
+  }
+
+    .feature-section{
+      background: linear-gradient(rgba(0,64,128,0.6),rgba(0,64,128,0.6)),
+      url('2.jpeg')no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input, form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  form button {
+    padding: 0.75rem;
+    border: none;
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .container{
+    padding: 50px 0;
+    text-align: center;
+  }
+  .calender table{
+    width: 100px;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+  }
+  .calender th, .calender td{
+    padding: 10px;
+    border: 1px solid #aaa;
+    text-align: center;
+  }
+
+  .container img{
+    width: 500px;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  .testimonial-slider{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    background: blue;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  .testimonial{
+    display: none;
+    animation: fadein 1s ease-in-out;
+  }
+  
+  .testimonial-active{
+    display: block;
+  }
+
+  .testimonial p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .testimonial h4{
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #777;
+    transition: color 0.3s;
+    padding: 0 15px;
+  }
+
+  .slider-buttons{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .slider-buttons span{
+    cursor: pointer;
+    font-size: 2rem;
+    color: #777;
+    transition: color 0.3s;
+    padding: 0 15px;
+  }
+  .slider-buttons span:hover{
+    color: #333;
+  }
+
+  @keyframes fadein{
+    from{opacity:0;transform:translateY(20px);} to {opacity: 1; transform: translateY(o);}
+  }
+  footer {
+    background-color: #002050;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+
+    .hero, .section {
+      padding: 2rem 1rem;
+    }
+  }
